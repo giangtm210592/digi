@@ -62,6 +62,16 @@ web-footer
 
 nx g @nrwl/angular:component web-footer --changeDetection=OnPush --style=none
 
+### add feature landing-page
+
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/landing-page
+
+landing-page
+
+landing-page -> feature
+
+nx g @nrwl/angular:component landing-page --changeDetection=OnPush --style=none
+
 ### add feature home-page
 
 npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/home-page
