@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@digi/web/auth/feature": ["libs/web/auth/feature/src/index.ts"],
       "@digi/web/home-page/feature": ["libs/web/home-page/feature/src/index.ts"],
       "@digi/web/shared/app-config": ["libs/web/shared/app-config/src/index.ts"],
       "@digi/web/shared/data-access/http-api": ["libs/web/shared/data-access/http-api/src/index.ts"],

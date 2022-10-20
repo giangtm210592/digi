@@ -85,3 +85,13 @@ npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared/data-access
 http-api
 
 ng g s http
+
+### add feature auth
+
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/auth
+
+auth
+
+auth -> feature
+
+nx g @nrwl/angular:component login-page --changeDetection=OnPush --style=none
