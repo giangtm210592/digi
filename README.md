@@ -103,3 +103,11 @@ npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared/services
 auth-service
 
 ng g s auth
+
+### add auth interceptor
+
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared/interceptors
+
+auth-interceptor
+
+ng g interceptor auth
