@@ -41,12 +41,29 @@ web-shell
 npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shell/ui
 
 web-layout
+
 nx g @nrwl/angular:component web-layout --changeDetection=OnPush --style=none
+
 web-header
+
 nx g @nrwl/angular:component web-header --changeDetection=OnPush --style=none
+
 web-sidebar
+
 nx g @nrwl/angular:component web-sidebar --changeDetection=OnPush --style=none
+
 web-main-view
+
 nx g @nrwl/angular:component web-main-view --changeDetection=OnPush --style=none
+
 web-footer
+
 nx g @nrwl/angular:component web-footer --changeDetection=OnPush --style=none
+
+## add feature home-page
+
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/home-page/feature
+
+home-page
+
+nx g @nrwl/angular:component home-page --changeDetection=OnPush --style=none
