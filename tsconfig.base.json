@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@digi/web/shell/feature/web-shell": ["libs/web/shell/feature/web-shell/src/index.ts"],
+      "@digi/web/shell/ui/web-footer": ["libs/web/shell/ui/web-footer/src/index.ts"],
+      "@digi/web/shell/ui/web-header": ["libs/web/shell/ui/web-header/src/index.ts"],
+      "@digi/web/shell/ui/web-layout": ["libs/web/shell/ui/web-layout/src/index.ts"],
+      "@digi/web/shell/ui/web-main-view": ["libs/web/shell/ui/web-main-view/src/index.ts"],
+      "@digi/web/shell/ui/web-sidebar": ["libs/web/shell/ui/web-sidebar/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"],
   "files": ["global-types.d.ts"]
