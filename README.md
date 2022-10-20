@@ -129,3 +129,11 @@ npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared/guards
 auth-guard
 
 ng g guard auth
+
+### add destroy service
+
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared/services
+
+destroy-service
+
+ng g s destroy
