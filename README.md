@@ -95,3 +95,11 @@ auth
 auth -> feature
 
 nx g @nrwl/angular:component login-page --changeDetection=OnPush --style=none
+
+### add auth service
+
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared/services
+
+auth-service
+
+ng g s auth
