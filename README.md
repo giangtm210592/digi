@@ -62,7 +62,7 @@ web-footer
 
 nx g @nrwl/angular:component web-footer --changeDetection=OnPush --style=none
 
-## add feature home-page
+### add feature home-page
 
 npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/home-page
 
@@ -71,3 +71,17 @@ home-page
 home-page -> feature
 
 nx g @nrwl/angular:component home-page --changeDetection=OnPush --style=none
+
+### add app-config for injection token for environment
+
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared
+
+app-config
+
+### add http api services
+
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared/data-access
+
+http-api
+
+ng g s http

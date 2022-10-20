@@ -16,6 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@digi/web/home-page/feature": ["libs/web/home-page/feature/src/index.ts"],
+      "@digi/web/shared/app-config": ["libs/web/shared/app-config/src/index.ts"],
+      "@digi/web/shared/data-access/http-api": ["libs/web/shared/data-access/http-api/src/index.ts"],
       "@digi/web/shell/feature": ["libs/web/shell/feature/src/index.ts"],
       "@digi/web/shell/ui/web-footer": ["libs/web/shell/ui/web-footer/src/index.ts"],
       "@digi/web/shell/ui/web-header": ["libs/web/shell/ui/web-header/src/index.ts"],
