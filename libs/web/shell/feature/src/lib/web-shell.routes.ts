@@ -8,7 +8,7 @@ export const webShellRoutes: Route[] = [
     children: [
       {
         path: '',
-        loadChildren: async () => (await import('@digi/web/home-page/feature/home-page')).HomePageModule
+        loadChildren: async () => (await import('@digi/web/home-page/feature')).HomePageModule
       }
     ]
   }

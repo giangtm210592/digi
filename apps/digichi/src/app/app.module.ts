@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NxWelcomeComponent } from './nx-welcome.component';
 import { HttpClientModule } from '@angular/common/http';
-import { WebShellModule } from '@digi/web/shell/feature/web-shell';
+import { WebShellModule } from '@digi/web/shell/feature';
 
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],

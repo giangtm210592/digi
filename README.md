@@ -32,9 +32,11 @@ add lint-staged script to package.json
 
 #### web/shell/feature/web-shell config any forRoot modules
 
-npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shell/feature
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shell
 
 web-shell
+
+web-shell -> feature
 
 #### web/shell/ui for layout modules
 
@@ -62,8 +64,10 @@ nx g @nrwl/angular:component web-footer --changeDetection=OnPush --style=none
 
 ## add feature home-page
 
-npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/home-page/feature
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/home-page
 
 home-page
+
+home-page -> feature
 
 nx g @nrwl/angular:component home-page --changeDetection=OnPush --style=none
