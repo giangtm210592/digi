@@ -30,7 +30,7 @@ add lint-staged script to package.json
 
 ### init web shell
 
-#### web/shell/feature/web-shell config any forRoot modules
+#### web/core/feature config any forRoot modules and web routes
 
 npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/core
 
@@ -38,9 +38,9 @@ core
 
 core -> feature
 
-#### web/shell/ui for layout modules
+#### web/core/ui for layout components
 
-npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shell/ui
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/core/ui
 
 web-layout
 
@@ -48,23 +48,9 @@ nx g @nrwl/angular:component web-layout --changeDetection=OnPush --style=none
 
 web-header
 
-nx g @nrwl/angular:component web-header --changeDetection=OnPush --style=none
+### add features
 
-web-sidebar
-
-nx g @nrwl/angular:component web-sidebar --changeDetection=OnPush --style=none
-
-web-main-view
-
-nx g @nrwl/angular:component web-main-view --changeDetection=OnPush --style=none
-
-web-footer
-
-nx g @nrwl/angular:component web-footer --changeDetection=OnPush --style=none
-
-### add feature landing-page
-
-npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/landing-page
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/features/landing-page
 
 landing-page
 
@@ -72,23 +58,13 @@ landing-page -> feature
 
 nx g @nrwl/angular:component landing-page --changeDetection=OnPush --style=none
 
-### add feature home-page
-
-npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/home-page
-
-home-page
-
-home-page -> feature
-
-nx g @nrwl/angular:component home-page --changeDetection=OnPush --style=none
-
 ### add app-config for injection token for environment
 
 npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared
 
 app-config
 
-### add http api services
+### add shared data-access
 
 npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared/data-access
 
@@ -96,17 +72,7 @@ http-api
 
 ng g s http
 
-### add feature auth
-
-npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/login-page
-
-login-page
-
-login-page -> feature
-
-nx g @nrwl/angular:component login-page --changeDetection=OnPush --style=none
-
-### add auth service
+### add shared services
 
 npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared/services
 
@@ -114,7 +80,7 @@ auth-service
 
 ng g s auth
 
-### add auth interceptor
+### add shared interceptors
 
 npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared/interceptors
 
@@ -122,7 +88,7 @@ auth-interceptor
 
 ng g interceptor auth
 
-### add auth guard
+### add shared guards
 
 npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared/guards
 
@@ -130,15 +96,7 @@ auth-guard
 
 ng g guard auth
 
-### add destroy service
-
-npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared/services
-
-destroy-service
-
-ng g s destroy
-
-### add app constants
+### add shared constants
 
 npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared
 
