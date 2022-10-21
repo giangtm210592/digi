@@ -32,11 +32,11 @@ add lint-staged script to package.json
 
 #### web/shell/feature/web-shell config any forRoot modules
 
-npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shell
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/core
 
-web-shell
+core
 
-web-shell -> feature
+core -> feature
 
 #### web/shell/ui for layout modules
 
