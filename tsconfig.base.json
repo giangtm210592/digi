@@ -29,6 +29,8 @@
       "@digi/web/shared/data-access/http-api": ["libs/web/shared/data-access/http-api/src/index.ts"],
       "@digi/web/shared/guards/auth-guard": ["libs/web/shared/guards/auth-guard/src/index.ts"],
       "@digi/web/shared/interceptors/auth-interceptor": ["libs/web/shared/interceptors/auth-interceptor/src/index.ts"],
+      "@digi/web/shared/pipes/safe-html": ["libs/web/shared/pipes/safe-html/src/index.ts"],
+      "@digi/web/shared/pipes/safe-url": ["libs/web/shared/pipes/safe-url/src/index.ts"],
       "@digi/web/shared/services/auth-service": ["libs/web/shared/services/auth-service/src/index.ts"],
       "@digi/web/shared/services/destroy-service": ["libs/web/shared/services/destroy-service/src/index.ts"]
     }

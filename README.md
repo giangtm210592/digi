@@ -101,3 +101,11 @@ ng g guard auth
 npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared
 
 constants
+
+### add shared pipes
+
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared/pipes
+
+safe-html
+
+ng g pipe safe-html
