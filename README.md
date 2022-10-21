@@ -98,11 +98,11 @@ ng g s http
 
 ### add feature auth
 
-npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/auth
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/login-page
 
-auth
+login-page
 
-auth -> feature
+login-page -> feature
 
 nx g @nrwl/angular:component login-page --changeDetection=OnPush --style=none
 

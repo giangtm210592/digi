@@ -1,7 +1,7 @@
 import { Route } from '@angular/router';
 import { WebLayoutComponent } from '@digi/web/shell/ui/web-layout';
-import { LoginPageComponent } from '@digi/web/auth/feature';
 import { AuthGuard } from '@digi/web/shared/guards/auth-guard';
+import { LoginPageComponent } from '@digi/web/login-page/feature';
 
 export const webShellRoutes: Route[] = [
   {
