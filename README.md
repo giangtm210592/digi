@@ -137,3 +137,9 @@ npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared/services
 destroy-service
 
 ng g s destroy
+
+### add app constants
+
+npx nx g @nrwl/angular:lib --simpleModuleName --directory=web/shared
+
+constants
